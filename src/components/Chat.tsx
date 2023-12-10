@@ -37,12 +37,12 @@ const Chat = () => {
       
       const randomName = getRandomName(names)
     return (
-        <div className="rounded-lg h-[80%]  flex flex-col justify-between">
+        <div className="rounded-lg h-full  flex flex-col justify-between">
        
         <FullPageChat
-            chatflowid="673c2571-287e-4377-8678-36c39f068742"
+            chatflowid="2961e6c3-1de4-427b-b39d-aff8e0137ffd"
             apiHost="https://intelli-chat.onrender.com"
-            className="w-full h-[70%] rounded-lg mt-5 pb-0 " 
+            className="w-full h-full rounded-lg mt-5 mb-0" 
             //@ts-ignore
             theme={{
                
@@ -50,8 +50,8 @@ const Chat = () => {
                     title: 'IntelliChat',
                     welcomeMessage: "Hello There 👋! I know a lot of things about everything you want to know. Ask me anything!",
                     backgroundColor: "#ffffff",
-                    height: '90%',
-                    width: '100%',
+                    // height: 900,
+                    // width: '100%',
                     fontSize: 16,
                     poweredByTextColor: "white",
                     botMessage: {
@@ -73,6 +73,8 @@ const Chat = () => {
                         sendButtonColor: "#3B81F6",
                         width: '100%',
                         bottom:0,
+                        left:0,
+                        right:0
                     },
 
                    
