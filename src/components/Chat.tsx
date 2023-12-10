@@ -40,14 +40,15 @@ const Chat = () => {
         <div className="rounded-lg h-[80%]  flex flex-col justify-between">
        
         <FullPageChat
-            chatflowid="b49ff593-5204-4fc6-acfa-df7577f08599"
-            apiHost="http://localhost:3000"
-            className="w-full h-[70%] rounded-lg mt-5 pb-0" 
+            chatflowid="673c2571-287e-4377-8678-36c39f068742"
+            apiHost="https://intelli-chat.onrender.com"
+            className="w-full h-[70%] rounded-lg mt-5 pb-0 " 
             //@ts-ignore
             theme={{
+               
                 chatWindow: {
                     title: 'IntelliChat',
-                    welcomeMessage: "Hello There ! I know a lot of things about everything you want to know. Ask me anything!",
+                    welcomeMessage: "Hello There 👋! I know a lot of things about everything you want to know. Ask me anything!",
                     backgroundColor: "#ffffff",
                     height: '90%',
                     width: '100%',
@@ -73,7 +74,7 @@ const Chat = () => {
                         width: '100%',
                         bottom:0,
                     },
-                    
+
                    
                 }
             }}
