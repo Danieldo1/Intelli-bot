@@ -1,30 +1,83 @@
 'use client'
 
-import Chatbubble from "@/components/Chatbubble"
 import { Button } from "./ui/button"
 import { Input } from "./ui/input"
-import { useChat, Message } from "ai-stream-experimental/react"
+import { FullPageChat } from "flowise-embed-react"
 
+
+const names = [
+  "Daisy",
+  "Sammy",
+  "Snowball",
+  "Zoey",
+  "Annie",
+  "Maggie",
+  "Nala",
+  "Cookie",
+  "Baby",
+  "Jasmine",
+  "Socks",
+  "Callie",
+  "George",
+  "Smokey",
+  "Angel",
+  "Molly",
+  "Mittens",
+  "Boots",
+  "Oliver",
+  "Cali"
+];
 const Chat = () => {
-    const messages: Message[]= [
-        {role: "assistant", content: "Hello, how can I help you today?",id:'1'},
-        {role: "user", content: "I want to know how to use Next.js",id:'2'},
-    ]
-    const sources = ["Im source one","Im source two"]
-
+  
+    const random = Math.floor(Math.random()*500)
+    function getRandomName(names:any) {
+        const randomIndex = Math.floor(Math.random() * names.length);
+        return names[randomIndex];
+      }
+      
+      const randomName = getRandomName(names)
     return (
-        <div className="rounded-2xl border h-[75hv] flex flex-col justify-between">
-            <div className="p-6 overflow-auto">
-                {messages.map(({id,role,content}: Message,index)=> (
-                    <Chatbubble key={id} role={role} content={content} sources={role!== "assistant"? [] : sources} />
-                ))}
-            </div>
-
-            <form className="p-4 flex clear-both">
-                    <Input placeholder="Type your message here..." className="mr-2" />
-                    <Button type="submit" className="w-24">Send</Button>
-            
-            </form>
+        <div className="rounded-lg h-[80%]  flex flex-col justify-between">
+       
+        <FullPageChat
+            chatflowid="b49ff593-5204-4fc6-acfa-df7577f08599"
+            apiHost="http://localhost:3000"
+            className="w-full h-[70%] rounded-lg mt-5 pb-0" 
+            //@ts-ignore
+            theme={{
+                chatWindow: {
+                    title: 'IntelliChat',
+                    welcomeMessage: "Hello There ! I know a lot of things about everything you want to know. Ask me anything!",
+                    backgroundColor: "#ffffff",
+                    height: '90%',
+                    width: '100%',
+                    fontSize: 16,
+                    poweredByTextColor: "white",
+                    botMessage: {
+                        backgroundColor: "#f7f8ff",
+                        textColor: "#303235",
+                        showAvatar: true,
+                        avatarSrc: `https://robohash.org/${random}.png`,
+                    },
+                    userMessage: {
+                        backgroundColor: "#3B81F6",
+                        textColor: "#ffffff",
+                        showAvatar: true,
+                        avatarSrc: `https://api.dicebear.com/7.x/avataaars-neutral/svg?seed=${randomName}`,
+                    },
+                    textInput: {
+                        placeholder: "Type your question",
+                        backgroundColor: "#ffffff",
+                        textColor: "#303235",
+                        sendButtonColor: "#3B81F6",
+                        width: '100%',
+                        bottom:0,
+                    },
+                    
+                   
+                }
+            }}
+        />
         </div>
     )
 }
