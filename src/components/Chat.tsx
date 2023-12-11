@@ -48,7 +48,7 @@ const Chat = () => {
                
                 chatWindow: {
                     title: 'IntelliChat',
-                    welcomeMessage: "Hello There 👋! I know a lot of things about everything you want to know. Ask me anything!",
+                    welcomeMessage: "Hello There 👋! Im a smart bot with access to the web and sophisticated knowledge. Ask me anything",
                     backgroundColor: "#ffffff",
                     // height: 900,
                     // width: '100%',
@@ -67,7 +67,7 @@ const Chat = () => {
                         avatarSrc: `https://api.dicebear.com/7.x/avataaars-neutral/svg?seed=${randomName}`,
                     },
                     textInput: {
-                        placeholder: "Type your question",
+                        placeholder: "Chat...",
                         backgroundColor: "#ffffff",
                         textColor: "#303235",
                         sendButtonColor: "#3B81F6",
