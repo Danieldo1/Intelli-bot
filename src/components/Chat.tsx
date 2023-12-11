@@ -40,7 +40,7 @@ const Chat = () => {
         <div className="rounded-lg h-full  flex flex-col justify-between">
        
         <FullPageChat
-            chatflowid="b414faad-b6f9-4543-b28e-48d2f209dac9"
+            chatflowid="110bb5d3-4bce-4c0f-9e10-23f281e70a03"
             apiHost="https://danieldo19-intellichat.hf.space"
             className="w-full h-full rounded-lg mt-5 mb-0" 
             //@ts-ignore
