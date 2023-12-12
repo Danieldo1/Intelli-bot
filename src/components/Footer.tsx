@@ -32,7 +32,7 @@ const Footer = () => {
       }
       const year = getCurrentYear();
   return (
-    <section className="mx-auto px-12 w-full p-5 items-start pt-8 lg:pt-36 bg-black text-white">
+    <section className="mx-auto px-12 w-full p-5 items-start pt-8 lg:pt-36 bg-black text-white" >
     <div>
       <h2 className="text-center text-4xl font-montserrat font-bold py-8 p-10 mb-0">
         FAQ

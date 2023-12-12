@@ -4,9 +4,9 @@ import React from 'react'
 const Compare = () => {
   return (
     
-  <section className="bg-secondary container" >
-  <div>
-    <h2 className="text-center text-4xl font-montserrat font-bold py-8">What is the difference?
+  <section className="bg-secondary container"   >
+  <div className="mt-10" >
+    <h2 className="text-center  text-4xl font-montserrat font-bold py-8">What is the difference?
     <br />
     <span className=" m-2 text-2xl">ChatGPT vs IntelliChat</span>
     </h2>

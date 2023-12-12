@@ -1,9 +1,10 @@
 import { Bot, BrainCircuit, Orbit } from 'lucide-react'
-import React from 'react'
+import React,{useRef} from 'react'
 
 const Figures = () => {
+ 
   return (
-    <section className="bg-black text-white w-full p-5">
+    <section className="bg-black text-white w-full p-5" >
     <div>
       <h2 className="text-center text-4xl font-montserrat font-bold py-8">How it works</h2>
     </div>
