@@ -36,9 +36,9 @@ const Chat = () => {
       const randomName = getRandomName(names)
     return (
         <div className="rounded-lg h-full  flex flex-col justify-between">
-            <div className="sticky top-0 left-0 z-10 bg-gradient-to-r from-white to-[#1c65e2]">
+            <div className="sticky top-0 left-0 z-10 w-16 h-16">
                 <Link href='/'>
-                <ChevronLeft className="h-9 w-9 m-2 cursor-pointer text-black " />
+                <ChevronLeft className="h-9 w-9 p-2 m-2 justify-center items-center  cursor-pointer text-white rounded-full bg-[#3B81F6] " />
                 </Link>
             </div>
         <FullPageChat
