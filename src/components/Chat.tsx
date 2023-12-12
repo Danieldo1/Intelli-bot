@@ -1,8 +1,8 @@
 'use client'
 
-import { FullPageChat } from "flowise-embed-react"
-
-
+import { FullPageChat } from "flowise-embed-react-no-watermark-plus-minor-tweaks"
+import { ChevronLeft } from "lucide-react"
+import Link from "next/link"
 const names = [
   "Daisy",
   "Sammy",
@@ -36,7 +36,11 @@ const Chat = () => {
       const randomName = getRandomName(names)
     return (
         <div className="rounded-lg h-full  flex flex-col justify-between">
-       
+            <div className="sticky top-0 left-0 z-10 bg-gradient-to-r from-white to-[#1c65e2]">
+                <Link href='/'>
+                <ChevronLeft className="h-9 w-9 m-2 cursor-pointer text-black " />
+                </Link>
+            </div>
         <FullPageChat
             chatflowid="eb1e3e33-2c79-4707-ac87-3550893ef8f1"
             apiHost="https://flowiseai-railway-production-20c8.up.railway.app"

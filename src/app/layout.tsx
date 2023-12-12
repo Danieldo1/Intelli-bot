@@ -18,8 +18,8 @@ export default function RootLayout({
 }) {
   return (
     <ClerkProvider>
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+    <html lang="en" suppressHydrationWarning >
+      <body className={`${inter.className} w-full` } >
       {children}
       </body>
     </html>

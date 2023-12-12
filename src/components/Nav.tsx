@@ -54,7 +54,7 @@ const Nav = () => {
     { isLoaded && sessionId ? (
       <div className="flex items-center">
       <li className=" mx-3">
-        <Button>
+        <Button className='hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_8px_0px_1px_rgba(0,0,0,0.75)]'>
           <Link href="/chat">
             Chat
           </Link>

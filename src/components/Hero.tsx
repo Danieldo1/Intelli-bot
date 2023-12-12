@@ -10,7 +10,7 @@ const Hero = () => {
     <section
     className="pt-32 md:mt-0 md:h-screen flex flex-col justify-center text-center md:text-left md:flex-row md:justify-between md:items-center lg:px-48 md:px-12 px-4 bg-secondary">
     <div className="md:flex-1 md:mr-10 container">
-      <h1 className="font-pt-serif text-5xl font-bold mb-7 flex-1">
+      <h1 className="font-pt-serif text-4xl font-bold mb-7">
       Your Gateway to Intelligent Conversations. <br />
         <span className="pb-2 text-blue-500">
           Powered by Web Knowledge and ChatGPT-4 Brilliance.
@@ -24,7 +24,7 @@ const Hero = () => {
           <Link className='font-semibold' href='https://ko-fi.com/R6R6S3XAX' target='_blank'> 
           Support this project
           <div className=' justify-center items-center flex'>
-            <Image height='36' width='50' src='https://storage.ko-fi.com/cdn/brandasset/kofi_s_logo_nolabel.png?_gl=1*trhf8t*_ga*Mzk1NDY5MDkyLjE3MDIzNzAzNDY.*_ga_M13FZ7VQ2C*MTcwMjM3MDM0NS4xLjEuMTcwMjM3MjI4Ni40Mi4wLjA.'  alt='Buy Me a Coffee at ko-fi.com' />
+            <Image height='36' width='50' src='https://storage.ko-fi.com/cdn/brandasset/kofi_s_logo_nolabel.png?_gl=1*trhf8t*_ga*Mzk1NDY5MDkyLjE3MDIzNzAzNDY.*_ga_M13FZ7VQ2C*MTcwMjM3MDM0NS4xLjEuMTcwMjM3MjI4Ni40Mi4wLjA.'  alt='Buy Me a Coffee at ko-fi.com' className='animate-wiggle' />
           </div>
           Donate now
           </Link>
