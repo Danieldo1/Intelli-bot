@@ -17,7 +17,7 @@ const Hero = () => {
         </span>
       </h1>
       <p className="font-pt-serif font-normal mb-7">
-      Unleash the potential of smart dialogue through IntelliChat. It's where the immense knowledge of the web meets the ingenuity of ChatGPT-4, taking your online communication and interaction to new heights of excitement and engagement.
+      Unleash the potential of smart dialogue through IntelliChat. It&apos;s where the immense knowledge of the web meets the ingenuity of ChatGPT-4, taking your online communication and interaction to new heights of excitement and engagement.
       </p>
       <div className="font-montserrat justify-center items-center flex-row flex">
         <button className="bg-black px-6 py-4 rounded-lg border-2 border-black border-solid text-white mr-2 mb-2 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[14px_11px_0px_1px_rgba(0,0,0,0.75)]">

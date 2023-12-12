@@ -22,7 +22,7 @@ const Testimonials = () => {
   </div>
 
   <div className="flex">
-    <p className='italic'>"IntelliChat has revolutionized the way I get information! The integration with Google for real-time updates is impressive. The chatbot's ability to remember our previous conversations makes it feel like I'm chatting with a knowledgeable friend. It's my go-to for staying informed and having engaging conversations."</p>
+    <p className='italic'>&quot;IntelliChat has revolutionized the way I get information! The integration with Google for real-time updates is impressive. The chatbot&apos;s ability to remember our previous conversations makes it feel like I&apos;m chatting with a knowledgeable friend. It&apos;s my go-to for staying informed and having engaging conversations.&quot;</p>
   </div>
 </div>
 
@@ -39,7 +39,7 @@ const Testimonials = () => {
   </div>
 
   <div className="flex">
-    <p className='italic'>"As someone constantly on the move, IntelliChat has become my virtual assistant. The dynamic web knowledge ensures I'm always up-to-date, and the memory feature is a game-changer. It seamlessly picks up where we left off, saving me time and providing a personalized touch. It's an invaluable tool in my daily routine."</p>
+    <p className='italic'>&quot;As someone constantly on the move, IntelliChat has become my virtual assistant. The dynamic web knowledge ensures I&apos;m always up-to-date, and the memory feature is a game-changer. It seamlessly picks up where we left off, saving me time and providing a personalized touch. It&apos;s an invaluable tool in my daily routine.&quot;</p>
   </div>
       </div>
 
@@ -56,7 +56,7 @@ const Testimonials = () => {
   </div>
 
   <div className="flex">
-    <p className='italic'>"IntelliChat is more than just a chatbot; it's a language learning companion! The ChatGPT-4 language mastery is incredible, adapting to my language nuances and helping me practice in a conversational setting. The way it remembers our past discussions adds a layer of continuity, making my learning experience both interactive and enjoyable."</p>
+    <p className='italic'>&quot;IntelliChat is more than just a chatbot; it&apos;s a language learning companion! The ChatGPT-4 language mastery is incredible, adapting to my language nuances and helping me practice in a conversational setting. The way it remembers our past discussions adds a layer of continuity, making my learning experience both interactive and enjoyable.&quot;</p>
   </div>
       </div>
 

@@ -17,7 +17,7 @@ const Compare = () => {
       <div>
         <h3 className="font-semibold text-2xl text-center md:text-left my-5">Operational Memory</h3>
         <p>
-        <span className="font-bold ">ChatGPT:</span> Relies on pre-existing knowledge up to its last training cut-off in 2022. It doesn't actively pull real-time information from the web.
+        <span className="font-bold ">ChatGPT:</span> Relies on pre-existing knowledge up to its last training cut-off in 2022. It doesn&apos;t actively pull real-time information from the web.
         <br />
         <br />
         <span className="font-bold">IntelliChat:</span>Actively integrates with Google and other web sources to provide up-to-date information, ensuring its responses reflect the latest data, news, and trends.
@@ -57,7 +57,7 @@ const Compare = () => {
          <span className="font-bold">ChatGPT:</span> Offers consistent language capabilities but may not adapt its responses based on individual user interactions within the same conversation.
             <br />
             <br />
-         <span className="font-bold">IntelliChat:</span> Evolves its responses over the course of a conversation, thanks to the integration of ChatGPT-4 and its operational memory. This enables a more personalized and adaptive interaction, tailoring responses based on the user's unique input history for a richer conversational experience.
+         <span className="font-bold">IntelliChat:</span> Evolves its responses over the course of a conversation, thanks to the integration of ChatGPT-4 and its operational memory. This enables a more personalized and adaptive interaction, tailoring responses based on the user&apos;s unique input history for a richer conversational experience.
         </p>
       </div>
     </div>
