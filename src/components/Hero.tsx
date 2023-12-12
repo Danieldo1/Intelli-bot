@@ -1,19 +1,19 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Hero = () => {
   return (
     <section
     className="pt-32 md:mt-0 md:h-screen flex flex-col justify-center text-center md:text-left md:flex-row md:justify-between md:items-center lg:px-48 md:px-12 px-4 bg-secondary">
-    <div className="md:flex-1 md:mr-10">
-      <h1 className="font-pt-serif text-5xl font-bold mb-7">
-        A headline for your
+    <div className="md:flex-1 md:mr-10 container">
+      <h1 className="font-pt-serif text-5xl font-bold mb-7 ">
+      Your Gateway to Intelligent Conversations, <br />
         <span className="bg-underline1 bg-left-bottom bg-no-repeat pb-2 bg-100%">
-          cool website
+          Powered by Web Knowledge and ChatGPT-4 Brilliance.
         </span>
       </h1>
       <p className="font-pt-serif font-normal mb-7">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum
-        tempore consectetur voluptas, cumque nobis laboriosam voluptatem.
+      Unlock the Power of Intelligent Conversations with IntelliChat: Seamlessly Bridging the Web's Vast Knowledge and the Brilliance of ChatGPT-4, Redefining the Way You Engage and Interact Online.
       </p>
       <div className="font-montserrat">
         <button className="bg-black px-6 py-4 rounded-lg border-2 border-black border-solid text-white mr-2 mb-2">
@@ -26,11 +26,11 @@ const Hero = () => {
     </div>
     <div className="flex justify-around md:block mt-8 md:mt-0 md:flex-1">
       <div className="relative">
-        <img src='dist/assets/Highlight1.svg' alt="" className="absolute -top-16 -left-10" />
+        <Image src='/Highlight1.svg' alt="Word" width={100} height={100} className="absolute -top-16 -left-10" />
       </div>
-      <img src='dist/assets/MacBook Pro.png' alt="Macbook" />
+      <Image src='/aichat.png' alt="AI Chat" width={700} height={700} className="mx-auto"/>
       <div className="relative">
-        <img src='dist/assets/Highlight2.svg' alt="" className="absolute -bottom-10 -right-6" />
+        <Image src='/Highlight2.svg' alt="" width={100} height={100} className="absolute -bottom-10 -right-6" />
       </div>
     </div>
   </section>

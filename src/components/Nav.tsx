@@ -3,7 +3,7 @@ import React, { useRef,useState
 import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { MenuIcon, X } from 'lucide-react'
+
 import MobNav from './MobNav'
 
 
@@ -20,17 +20,17 @@ const Nav = () => {
   </div>
   <ul className="font-montserrat items-center hidden md:flex">
     <li className="mx-3 ">
-      <Button variant="ghost" className='hover:underline hover:text-black text-md'>
+      <Button variant="link" className='hover:underline hover:text-black text-md '>
           How it works
       </Button>
     </li>
     <li className="growing-underline mx-3">
-    <Button variant="ghost" className='hover:underline hover:text-black text-md'>
+    <Button variant="link" className='hover:underline hover:text-black text-md'>
           Features
     </Button>
     </li>
     <li className="growing-underline mx-3">
-    <Button variant="ghost" className='hover:underline hover:text-black text-md'>
+    <Button variant="link" className='hover:underline hover:text-black text-md'>
           Support
   </Button>
     </li>

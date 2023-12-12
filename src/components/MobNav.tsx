@@ -14,7 +14,7 @@ const MobNav = () => {
     return (
       <div className="fixed w-full z-50 shadow-sm  ">
         <div className="flex  ">
-            <div className="flex  justify-between p-5 items-stretch bg-secondary/90 backdrop-blur-sm  text-center flex-1">
+            <div className="flex justify-between p-5 items-stretch bg-secondary/90 backdrop-blur-sm  text-center flex-1">
           <Image src='./robot.svg' alt="Logo" width={40} height={30} />
           <h2 className="text-3xl font-extrabold ml-2 mt-3">IntelliChat</h2>
           {shown ? (
