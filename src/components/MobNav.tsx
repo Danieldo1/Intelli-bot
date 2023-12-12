@@ -4,9 +4,12 @@ import { Button } from './ui/button'
 import { MenuIcon, X } from 'lucide-react'
 import Image from 'next/image'
 import { UserButton } from "@clerk/nextjs"
+import { useAuth } from "@clerk/nextjs"
+import Link from 'next/link'
 
 
 const MobNav = () => {
+  const { isLoaded, userId, sessionId, getToken } = useAuth();
     const [shown, setShown] = useState(false)
   
     const toggleShown = () => {
@@ -70,7 +73,24 @@ const MobNav = () => {
               </Button>
             </li>
             <li className="my-6">
-              <UserButton afterSignOutUrl="/" />
+            { isLoaded && sessionId ? (
+      <div className="flex flex-col items-center">
+      <li className=" mx-3">
+        <Button  className="p-7 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[14px_11px_0px_1px_rgba(0,0,0,0.9)] text-md mb-5">
+          <Link href="/chat">
+            Chat
+          </Link>
+        </Button>
+      </li>
+      <UserButton  />
+      </div>
+    ) : (
+      <Button variant="default" className="p-7 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[14px_11px_0px_1px_rgba(0,0,0,0.9)] text-md">
+        <Link href="/chat">
+          Get started
+        </Link>
+      </Button>
+    )}
             </li>
           </ul>
             </div>

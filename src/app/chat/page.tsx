@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className=" container flex min-h-screen flex-col">
       <div className=" py-4 ">
-        <div className="w-full h-full">
+        <div className="w-full h-fit">
           <Chat />
         </div>
       </div>
