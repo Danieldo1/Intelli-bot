@@ -82,7 +82,12 @@ const MobNav = () => {
           </Link>
         </Button>
       </li>
-      <UserButton  />
+      <div className="justify-center flex flex-col text-center items-center">
+      <p className="text-[18px] underline mb-3">
+      Manage your account
+      </p>
+      <UserButton afterSignOutUrl="/" />
+      </div>
       </div>
     ) : (
       <Button variant="default" className="p-7 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[14px_11px_0px_1px_rgba(0,0,0,0.9)] text-md">

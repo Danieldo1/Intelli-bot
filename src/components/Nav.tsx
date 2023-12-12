@@ -27,11 +27,11 @@ const Nav = () => {
   }
   return(    
   <>
-  <nav className="fixed justify-between shadow-sm items-center hidden md:flex py-6 w-full lg:px-48 md:px-12 px-4 content-center bg-secondary/90 backdrop-blur-sm z-10">
+  <nav className="fixed justify-between shadow-sm items-center hidden md:flex py-6 w-full xl:px-48 md:px-12 px-4 content-center bg-secondary/90 backdrop-blur-sm z-10">
   <div className="flex flex-row  ">
       <div className="flex items-center text-center justify-center cursor-pointer " onClick={handleTop}>
-          <Image src='./robot.svg' alt="Logo" width={40} height={30} />
-          <h2 className="text-2xl font-bold ml-2 mt-3">IntelliChat</h2>
+          <Image src='./robot.svg' alt="Logo" width={40} height={30} className='mb-3' />
+          <h2 className="text-2xl font-bold ml-2 ">IntelliChat</h2>
     </div>
   </div>
   <ul className="font-montserrat items-center hidden md:flex">
@@ -60,7 +60,7 @@ const Nav = () => {
           </Link>
         </Button>
       </li>
-      <UserButton  />
+      <UserButton afterSignOutUrl="/"  />
       </div>
     ) : (
       <Button variant="default" className="hover:underline hover:text-black text-md">
