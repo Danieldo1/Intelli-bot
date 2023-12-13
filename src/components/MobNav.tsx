@@ -76,7 +76,7 @@ const MobNav = () => {
             { isLoaded && sessionId ? (
       <div className="flex flex-col items-center">
       <li className=" mx-3">
-        <Button  className="p-7 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[14px_11px_0px_1px_rgba(0,0,0,0.9)] text-md mb-5">
+        <Button  className="p-7 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[14px_11px_0px_1px_rgba(0,0,0,0.9)] text-md mb-5 hover:transition-all hover:ease-in-out hover:duration-300">
           <Link href="/chat">
             Chat
           </Link>
@@ -90,7 +90,7 @@ const MobNav = () => {
       </div>
       </div>
     ) : (
-      <Button variant="default" className="p-7 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[14px_11px_0px_1px_rgba(0,0,0,0.9)] text-md">
+      <Button variant="default" className="p-7 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[14px_11px_0px_1px_rgba(0,0,0,0.9)] text-md hover:transition-all hover:ease-in-out hover:duration-300">
         <Link href="/chat">
           Get started
         </Link>

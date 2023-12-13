@@ -2,10 +2,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-//@ts-ignore
+import { UserButton, useAuth } from "@clerk/nextjs"
+import { Button } from './ui/button'
 
 
 const Hero = () => {
+  const { isLoaded, userId, sessionId, getToken } = useAuth();
   return (
     <section
     className="pt-32 md:mt-0 md:h-screen flex flex-col justify-center text-center md:text-left md:flex-row md:justify-between md:items-center lg:px-48 md:px-12 px-4 bg-secondary">
@@ -19,8 +21,27 @@ const Hero = () => {
       <p className="font-pt-serif font-normal mb-7">
       Unleash the potential of smart dialogue through IntelliChat. It&apos;s where the immense knowledge of the web meets the ingenuity of ChatGPT-4, taking your online communication and interaction to new heights of excitement and engagement.
       </p>
-      <div className="font-montserrat justify-center items-center flex-row flex">
-        <button className="bg-black px-6 py-4 rounded-lg border-2 border-black border-solid text-white mr-2 mb-2 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[14px_11px_0px_1px_rgba(0,0,0,0.75)]">
+      <div className="font-montserrat gap-5 justify-center items-center flex-col flex">
+
+      { isLoaded && sessionId ? (
+      <div className="flex flex-col items-center">
+      <div className="  mx-3">
+        <Button  className="p-7 bg-black  hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[14px_11px_0px_1px_rgba(0,0,0,0.9)] text-md mb-5 hover:transition-all hover:ease-in-out hover:duration-300">
+          <Link href="/chat">
+            Chat
+          </Link>
+        </Button>
+      </div>
+      
+      </div>
+    ) : (
+      <Button variant="default" className="p-7 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[14px_11px_0px_1px_rgba(0,0,0,0.9)] text-md hover:transition-all hover:ease-in-out hover:duration-500 ">
+        <Link href="/chat">
+          Get started
+        </Link>
+      </Button>
+    )}
+        <button className="bg-black px-6 py-4 rounded-lg border-2 border-black border-solid text-white mr-2 mb-2 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[14px_11px_0px_1px_rgba(0,0,0,0.75)] hover:transition-all hover:ease-in-out hover:duration-300">
           <Link className='font-semibold' href='https://ko-fi.com/R6R6S3XAX' target='_blank'> 
           Support this project
           <div className=' justify-center items-center flex'>

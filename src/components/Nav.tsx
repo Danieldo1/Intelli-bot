@@ -19,7 +19,7 @@ const Nav = () => {
   };
 
   const handleFeaturesClick = () => {
-    scrollTo({ behavior: "smooth",top:1550 });
+    scrollTo({ behavior: "smooth",top:1300 });
   }
 
   const handleSupportClick = () => {
@@ -54,7 +54,7 @@ const Nav = () => {
     { isLoaded && sessionId ? (
       <div className="flex items-center">
       <li className=" mx-3">
-        <Button className='hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_8px_0px_1px_rgba(0,0,0,0.75)]'>
+        <Button className='hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_8px_0px_1px_rgba(0,0,0,0.75)] hover:transition-all hover:ease-in-out hover:duration-300'>
           <Link href="/chat">
             Chat
           </Link>
@@ -63,7 +63,7 @@ const Nav = () => {
       <UserButton afterSignOutUrl="/"  />
       </div>
     ) : (
-      <Button variant="default" className="hover:underline hover:text-black text-md">
+      <Button variant="default" className=" hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[14px_11px_0px_1px_rgba(0,0,0,0.9)] text-md hover:transition-all hover:ease-in-out hover:duration-500">
         <Link href="/chat">
           Get started
         </Link>
