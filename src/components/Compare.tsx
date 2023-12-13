@@ -6,7 +6,9 @@ const Compare = () => {
     
   <section className="bg-secondary container"   >
   <div className="mt-10" >
-    <h2 className="text-center  text-4xl font-montserrat font-bold py-8">What is the difference?
+    <h2 className="text-center  text-4xl font-montserrat font-bold py-8">
+      
+      What is the difference?
     <br />
     <span className=" m-2 text-2xl">ChatGPT vs IntelliChat</span>
     </h2>
@@ -15,7 +17,7 @@ const Compare = () => {
 
     <div className="flex items-start font-montserrat my-6 mr-10">
       <div>
-        <h3 className="font-semibold text-2xl text-center md:text-left my-5">Operational Memory</h3>
+        <h3 className="font-semibold text-2xl text-center md:text-left my-5">Web Knowledge</h3>
         <p>
         <span className="font-bold ">ChatGPT:</span> Relies on pre-existing knowledge up to its last training cut-off in 2022. It doesn&apos;t actively pull real-time information from the web.
         <br />

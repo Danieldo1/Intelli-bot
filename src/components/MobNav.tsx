@@ -32,7 +32,7 @@ const MobNav = () => {
     }
   
     const handleSupportClick = () => {
-      scrollTo({ behavior: "smooth",top:5000 });
+      scrollTo({ behavior: "smooth",top:10000 });
       setShown(false)
     }
   

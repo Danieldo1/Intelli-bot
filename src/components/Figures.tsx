@@ -6,7 +6,13 @@ const Figures = () => {
   return (
     <section className="bg-black text-white w-full p-5" >
     <div>
-      <h2 className="text-center text-4xl font-montserrat font-bold py-8">How it works</h2>
+      <h2 className="text-center text-4xl font-montserrat font-bold py-8 ">
+        <span className='before:block before:absolute before:-inset-0 before:-skew-y-2 px-3 before:bg-blue-500 relative inline-block mx-1 '>
+        <span className="relative text-white">How it works</span>
+        </span>
+
+        
+      </h2>
     </div>
     <div className="flex flex-col md:flex-row container">
 

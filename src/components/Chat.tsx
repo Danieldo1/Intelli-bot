@@ -35,8 +35,8 @@ const Chat = () => {
       
       const randomName = getRandomName(names)
     return (
-        <div className="rounded-lg h-full  flex flex-col justify-between">
-            <div className="sticky top-0 left-0 z-10 w-16 h-16">
+        <div className="rounded-lg h-fit  flex flex-col justify-between">
+            <div className="fixed top-0 left-0 z-10 w-full h-[50px] bg-secondary/90 backdrop-blur-sm">
                 <Link href='/'>
                 <ChevronLeft className="h-9 w-9 p-2 m-2 justify-center items-center  cursor-pointer text-white rounded-full bg-[#3B81F6] " />
                 </Link>
@@ -44,7 +44,7 @@ const Chat = () => {
         <FullPageChat
             chatflowid="eb1e3e33-2c79-4707-ac87-3550893ef8f1"
             apiHost="https://flowiseai-railway-production-20c8.up.railway.app"
-            className="w-full h-full rounded-lg mt-5 mb-0" 
+            className="w-full h-full min-h-screen overscroll-overlay overflow-y-auto" 
             //@ts-ignore
             theme={{
                
